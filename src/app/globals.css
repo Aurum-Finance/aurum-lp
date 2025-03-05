@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #EDE6DE;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.complex-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.complex-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #67011a 4.53%,
+    #9b0128 50.15%,
+    #67011a 100%
+  );
+  z-index: 1;
+  clip-path: polygon(
+    0% 50%,
+    10% 13%,
+    10% 0%,
+    90% 0%,
+    90% 13%,
+    100% 50%,
+    90% 87%,
+    90% 100%,
+    10% 100%,
+    10% 87%
+  );
+  transition: filter 0.3s;
+}
+
+.complex-button::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  background: linear-gradient(
+    90deg,
+    #c89b3c 5%,
+    #deca7b 53%,
+    #83632b 100%
+  );
+  z-index: 0;
+  filter: blur(4px);
+  opacity: 0.9;
+  transition: opacity 0.3s, filter 0.3s;
+  clip-path: polygon(
+    0% 50%,
+    10% 15%,
+    10% 0%,
+    90% 0%,
+    90% 15%,
+    100% 50%,
+    90% 85%,
+    90% 100%,
+    10% 100%,
+    10% 85%
+  );
+}
+
+.shine {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: -70px; 
+  height: 58px;
+  width: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  transition: transform 0.5s ease-in-out; 
+  transform: skewX(150deg) translateX(0);
+
+
+}
+
+.complex-button:hover .shine {
+  transform: skewX(150deg) translateX(350px) rotate(10deg);
+}
