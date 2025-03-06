@@ -155,7 +155,7 @@ const Navbar: React.FC<NavbarProps> = ({ isOpen, onToggle }) => {
                 </span>
               </Link>
               <Link
-                href="/"
+                href="https://docs.aurumfi.xyz"
                 className="relative overflow-hidden bg-[#EDE5B3] text-[#464032] font-instrument italic px-7 py-2 group"
               >
                 <span className="relative text-xl z-10 group-hover:text-white transition-colors duration-300">
