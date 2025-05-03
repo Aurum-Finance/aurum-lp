@@ -15,10 +15,10 @@ const CenterText = () => {
         Finance
       </p>
       <p className="text-black text-lg md:text-2xl mt-4 text-center max-w-xl">
-        Turn Your SOL into a Yield-Generating Treasury
+        Self-Repaying Loans, No Liquidations
       </p>
       <Link
-        href="https://t.me/+IfXkNEQpsbVkYTZk"
+        href="https://devnet.aurumfi.xyz"
         className="relative flex justify-center items-center mt-8 px-8 py-3 text-white text-xl transition-colors group"
       >
         <Image
@@ -30,7 +30,7 @@ const CenterText = () => {
           <Image src={TopBorder} alt="Top Border" />
           <Image src={BottomBorder} alt="Bottom Border" />
         </div>
-        <JoinCommunity text="Join Community" href="#" />
+        <JoinCommunity text="Explore Devnet" href="#" />
       </Link>
     </div>
   );
