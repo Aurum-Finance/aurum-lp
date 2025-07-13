@@ -16,7 +16,7 @@ const socialLinks = [
   {
     name: "Telegram",
     icon: "telegram",
-    href: "https://t.me/+IfXkNEQpsbVkYTZk",
+    href: "https://t.me/+Y-qHUek4rNQwMWRk",
   },
   { name: "Twitter", icon: "twitter", href: "https://x.com/Aurum_Fi" },
   // { name: "Discord", icon: "discord", href: "#" },
